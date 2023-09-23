@@ -1,0 +1,41 @@
+{
+  "name": "as-varint",
+  "version": "0.0.1",
+  "description": "TODO",
+  "main": "assembly/index.ts",
+  "types": "assembly/index.ts",
+  "author": "sydhds <sydhds@gmail.com>",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sydhds/as-varint.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sydhds/as-varint/issues"
+  },
+  "keywords": [
+    "varint",
+    "wasm",
+    "webassembly",
+    "assemblyscript"
+  ],
+  "scripts": {
+    "build:debug": "asc assembly/index.ts --target debug",
+    "build:release": "asc assembly/index.ts --target release",
+    "build": "npm run build:release",
+    "test": "asp --config as-pect.config.mjs --verbose",
+    "test:ci": "asp --config as-pect.config.mjs --summary --no-logo"
+  },
+  "devDependencies": {
+    "@as-pect/cli": "^8.1.0",
+    "assemblyscript": "^0.27.2",
+    "typescript": "^5.1"
+  },
+  "files": [
+    "assembly/",
+    "build/",
+    "README.md",
+    "LICENSE",
+    "package.json"
+  ]
+}
