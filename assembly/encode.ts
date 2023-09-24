@@ -6,11 +6,15 @@ const U32_LEN: i32 = 5;
 const U64_LEN: i32 = 10;
 // const U128_LEN: i32 = 19;
 
-// TODO: can we provide encode<T>?
-
 export function encode<T>(number: T): StaticArray<u8> {
     if (number instanceof u8) {
         return u8Encode(number);
+    } else if (number instanceof u16) {
+        return u16Encode(number)
+    } else if (number instanceof u32) {
+        return u32Encode(number)
+    } else if (number instanceof u64) {
+        return u64Encode(number)
     } else {
         throw new Error("as-varint: type not supported");
     }
