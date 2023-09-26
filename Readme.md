@@ -12,9 +12,10 @@ MIT
 
 ### TODO
 
-* Add more complete unit tests
-* Check https://github.com/paritytech/unsigned-varint for modifications
-* Document code & explain it
+* [] Add more complete unit tests
+* [] Check https://github.com/paritytech/unsigned-varint for modifications
+* [] Document code & explain it
+* [] Add code example
 
 ### Example
 
