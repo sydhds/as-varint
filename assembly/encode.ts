@@ -22,7 +22,6 @@ export function encode<T>(number: T): StaticArray<u8> {
 
 @inline
 export function u8Encode(number: u8): StaticArray<u8> {
-    // TODO: pass buffer as args?
     let buffer = u8_buffer();
 
     let n = number;
